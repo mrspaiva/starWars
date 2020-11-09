@@ -2,15 +2,16 @@ import styled from 'styled-components';
 
 export const App = styled.div`
   .content {
+    position: fixed;
     width: 100vw;
     height: 10vh;
-    background-color: #222;
-    opacity: 50%;
+    background-color: rgba(99, 99, 99, 0.2);
   }
 
-  .Clicklogo img {
+  .clickLogo img{
     width: 8rem;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
   }
 `;

@@ -7,9 +7,14 @@ export const App = styled.div`
     height: 100%;
   }
 
-  .background {
+  .content .background {
     position: absolute;
     width: 100vw;
     height: 100vh;
+  }
+
+  .title {
+    position: absolute;
+    color:#FFC500;
   }
 `;
