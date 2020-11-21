@@ -1,6 +1,4 @@
-<h1 align="center">
-  Star Wars api - Em construção 🚧
-</h1>
+<h1 align="center">Star Wars api - Em construção 🚧</h1>
 <p align="center">Uma aplicação com os dados de todo o universo Star Wars</p>
 
 <h3>💻 Sobre o projeto</h3>
