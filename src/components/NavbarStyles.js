@@ -1,17 +1,23 @@
 import styled from 'styled-components';
 
 export const App = styled.div`
-  .content {
-    position: fixed;
+  .contentLogo {
+    position: relative;
     width: 100vw;
-    height: 10vh;
+    height: 4rem;
     background-color: rgba(99, 99, 99, 0.2);
   }
 
+  .clickLogo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+
   .clickLogo img{
+    position: absolute;
     width: 8rem;
-    display: block;
-    margin: 0 auto;
     cursor: pointer;
   }
 `;

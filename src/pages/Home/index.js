@@ -13,7 +13,6 @@ function Home() {
         <div className="logo-container">
           <img className="logo" src={logo} alt="logo starwars"/>
         </div>
-
         
         <Link to="/category" className="next">
           <FiArrowRight color="#000" size={30}/>

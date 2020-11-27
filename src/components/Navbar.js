@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return(
     <App>
-      <div className="content">
+      <div className="contentLogo">
         <div className="clickLogo">
           <Link to="/">
             <img src={Logo} alt="logo starwars"/>
