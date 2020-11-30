@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { App } from './styles';
 import Navbar from '../../components/Navbar';
 
@@ -11,7 +12,7 @@ function Category() {
         <h1 className="title">Escolha uma categoria</h1>
         
         <section className="category">
-          <button className="films">Filmes</button>
+          <Link to="/films" className="films">Filmes</Link>
           <button className="people">Personagens</button>
           <button className="planets">Planetas</button>
           <button className="species">Espécies</button>

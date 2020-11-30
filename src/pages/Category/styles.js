@@ -44,5 +44,12 @@ export const App = styled.div`
     cursor: pointer;
     font-size: 1.5rem;
     background-color: #fff;
-  }
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
 `;
