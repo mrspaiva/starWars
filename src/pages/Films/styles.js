@@ -4,8 +4,9 @@ import Background from '../../img/background.png'
 export const App = styled.div`
 
   .contentFilms {
-    height: 100vh;
-    background-image: url(${Background})
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-image: url(${Background});
   }
 
   .contentFilms .title {
@@ -20,5 +21,14 @@ export const App = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 2rem
+  }
+
+  .contentFilms .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    margin-top: 8rem;
+    margin-left: 5rem;
+    max-width: 90vw;
   }
 `

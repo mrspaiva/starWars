@@ -14,7 +14,13 @@ function Films() {
         <div className="search">
           <Search />
         </div>
-        <Card />
+        <div className="card">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
     </App>
   )
