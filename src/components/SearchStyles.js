@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 
 export const App = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-
   .contentSearch {
     width: 20rem;
     height: 3rem;
