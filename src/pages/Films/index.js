@@ -1,6 +1,7 @@
 import { App } from './styles'
 import Navbar from '../../components/Navbar'
 import Search from '../../components/Search'
+import Card from '../../components/Card'
 
 function Films() {
   return (
@@ -9,9 +10,11 @@ function Films() {
         <div className="navbar">
           <Navbar />
         </div>
+        <h1 class="title">Filmes</h1>
         <div className="search">
           <Search />
         </div>
+        <Card />
       </div>
     </App>
   )

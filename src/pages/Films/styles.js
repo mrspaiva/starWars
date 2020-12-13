@@ -8,4 +8,17 @@ export const App = styled.div`
     background-image: url(${Background})
   }
 
+  .contentFilms .title {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    margin-top: 2rem
+  }
+
+  .contentFilms .search {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem
+  }
 `
