@@ -5,7 +5,7 @@ function Search() {
   return (
     <App>
       <section className="contentSearch">
-        <input class="inputSearch" type="text" placeholder="Digite um filme"/>
+        <input className="inputSearch" type="text" placeholder="Digite um filme"/>
         <div className="searchIcon">
           <FiSearch color='#000'/>
         </div>
