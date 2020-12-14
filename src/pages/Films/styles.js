@@ -4,7 +4,7 @@ import Background from '../../img/background.png'
 export const App = styled.div`
 
   .contentFilms {
-    overflow-x: hidden;
+    overflow: hidden;
     min-height: 100vh;
     background-image: url(${Background});
   }
@@ -20,15 +20,15 @@ export const App = styled.div`
   .contentFilms .search {
     display: flex;
     justify-content: center;
-    margin-top: 2rem
+    margin-top: 2rem;
+    margin-bottom: 6rem;
   }
 
   .contentFilms .card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
-    margin-top: 8rem;
-    margin-left: 5rem;
+    margin-left: 4rem;
     max-width: 90vw;
   }
 `
