@@ -27,6 +27,8 @@ export const App = styled.div`
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     cursor: pointer;
+    border: none;
+    background-color: #C4C4C4;
     transition: background 0.2s
   }
 
