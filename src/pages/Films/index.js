@@ -5,18 +5,27 @@ import Search from '../../components/Search'
 import Card from '../../components/Card'
 
 function Films() {
-  const [film, setFilm] = useState([])
+  const [filmList, setFilmList] = useState([])
+  const [input, setInput] = useState('')
 
   useEffect(() => {
     async function fetchData() {
       const response = await fetch("https://swapi.dev/api/films")
       const data = await response.json()
       console.log(data)
-      setFilm(data.results)
+      setFilmList(data.results)
     }
     fetchData()
   },[])
 
+  const updateInput = async (input) => {
+    const filtered = filmList.filter(film => {
+      return film.title.toLowerCase().includes(input.toLowerCase())
+    })
+    setInput(input)
+    setFilmList(filtered)
+  }
+  
   return (
     <App>
       <div className="contentFilms">
@@ -25,10 +34,13 @@ function Films() {
         </div>
         <h1 className="title">Filmes</h1>
         <div className="search">
-          <Search />
+          <Search 
+            input={input}
+            onChange={updateInput}
+          />
         </div>
         <div className="card">
-          {film.map((film, key) => (
+          {filmList.map((film, key) => (
             <Card 
             key={key} 
             title={film.title}

@@ -1,27 +1,31 @@
 import { App } from './SearchStyles'
 import { FiSearch } from 'react-icons/fi'
 
-export function hadleClick() {
-  return alert('ops')
-}
+const Search = ({input: text, onChange:setText}) => {
 
-function Search() {
+  function handleChange(event) {
+    event.preventDefault()
+
+    console.log(text)
+  }
 
   return (
     <App>
-      <section className="contentSearch">
+      <form onSubmit={handleChange} className="contentSearch">
         <input 
         className="inputSearch" 
         type="text" 
         placeholder="Digite um filme"
+        value={text}
+        onChange={event => setText(event.target.value)}
         />
 
         <button 
-        onClick={() => hadleClick()} 
-        className="searchIcon" >
+        className="searchIcon" 
+        type="submit">
           <FiSearch color='#000'/>
         </button>
-      </section>
+      </form>
     </App>
   )
 }
