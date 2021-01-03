@@ -12,8 +12,8 @@ function Category() {
         <h1 className="title">Escolha uma categoria</h1>
         
         <section className="category">
-          <Link to="/films" className="films">Filmes</Link>
-          <button className="people">Personagens</button>
+          <Link to="/category/films" className="films">Filmes</Link>
+          <Link to="/category/people" className="people">Personagens</Link>
           <button className="planets">Planetas</button>
           <button className="species">Espécies</button>
           <button className="starships">Naves</button>
