@@ -31,4 +31,15 @@ export const App = styled.div`
     margin-left: 4rem;
     max-width: 90vw;
   }
+
+  .card .titleCard {
+    font-size: 1.5rem;
+    color: #FFC500
+  }
+
+  .card .contentCardData {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+  }
 `

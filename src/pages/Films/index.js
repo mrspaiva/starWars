@@ -41,13 +41,26 @@ function Films() {
         </div>
         <div className="card">
           {filmList.map((film, key) => (
-            <Card 
-            key={key} 
-            title={film.title}
-            description={film.opening_crawl}
-            director={film.director}
-            release={film.release_date}
-            />
+            <Card key={key}>
+              <ul>
+                <li>
+                  <p className="titleCard">Título: </p>
+                  <p className="contentCardData">{film.title}</p>
+                </li>
+                <li>
+                  <p className="titleCard">Descrição:</p>
+                  <p className="contentCardData">{film.opening_crawl}</p>
+                </li>
+                <li>
+                  <p className="titleCard">Diretor: </p>
+                  <p className="contentCardData">{film.director}</p>
+                </li>
+                <li>
+                  <p className="titleCard">Lançamento: </p>
+                  <p className="contentCardData">{film.release_date}</p>
+                </li>
+              </ul>
+            </Card>
           ))}
         </div>
       </div>
