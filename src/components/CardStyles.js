@@ -4,7 +4,7 @@ export const App = styled.div`
 
   .contentCard {
     width: 38rem;
-    height: 24rem;
+    max-height: 24rem;
     background-color: #282727;
     color: #fff;
     border-radius: 1.6rem;
@@ -12,7 +12,7 @@ export const App = styled.div`
     box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.7);
     display: flex;
     margin: 1.8rem;
-    padding: 1.2rem;
+    padding: 1.2rem 0.8rem;
   }
 
   .contentCard .cardList {
@@ -27,16 +27,5 @@ export const App = styled.div`
   .cardList li {
     display: flex;
     margin-bottom: 1rem
-  }
-
-  li .titleCard {
-    font-size: 1.5rem;
-    color: #FFC500
-  }
-
-  li .content {
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
   }
 `
