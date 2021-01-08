@@ -1,4 +1,4 @@
-import { App } from './SearchStyles'
+import { Container, Input, Button } from './SearchStyles'
 import { FiSearch } from 'react-icons/fi'
 
 const Search = ({input: text, onChange: setText}) => {
@@ -8,24 +8,18 @@ const Search = ({input: text, onChange: setText}) => {
   }
 
   return (
-    <App>
-      <form onSubmit={handleChange} className="contentSearch">
-        <input 
-        className="inputSearch" 
+      <Container onSubmit={handleChange}>
+        <Input 
         type="text" 
         placeholder="Digite um filme"
         value={text}
         onChange={event => setText(event.target.value)}
         />
 
-        <button 
-        className="searchIcon" 
-        type="submit"
-        >
+        <Button type="submit">
           <FiSearch color='#000'/>
-        </button>
-      </form>
-    </App>
+        </Button>
+      </Container>
   )
 }
 
