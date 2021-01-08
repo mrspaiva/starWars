@@ -1,27 +1,36 @@
-import { Link } from 'react-router-dom';
-import { App } from './styles';
-import Navbar from '../../components/Navbar';
+import { Content, Title, CategoryList } from './styles'
+import Navbar from '../../components/Navbar/Navbar'
+import Button from '../../components/Button/Button'
+import { Link } from 'react-router-dom'
 
 function Category() {
   return (
-    <App>
-      <div className="content">
-        <div className="navbar">
+      <Content>
           <Navbar />
-        </div>
-        <h1 className="title">Escolha uma categoria</h1>
+        <Title>Escolha uma categoria</Title>
         
-        <section className="category">
-          <Link to="/category/films" className="films">Filmes</Link>
-          <Link to="/category/people" className="people">Personagens</Link>
-          <button className="planets">Planetas</button>
-          <button className="species">Espécies</button>
-          <button className="starships">Naves</button>
-          <button className="vehicles">Veículos</button>
-        </section>
-      </div>
-    </App>
+        <CategoryList>
+          <Button>
+            <Link to="/category/films" className="films">Filmes</Link>
+          </Button>
+          <Button>
+            <Link to="/category/people" className="people">Personagens</Link>
+          </Button>
+          <Button>
+            <Link className="planets">Planetas</Link>
+          </Button>  
+          <Button>
+            <Link className="species">Espécies</Link>
+          </Button>
+          <Button>
+            <Link className="starships">Naves</Link>
+          </Button>
+          <Button>
+            <Link className="vehicles">Veículos</Link>
+          </Button>
+        </CategoryList>
+      </Content>
   )
 }
 
-export default Category;
+export default Category
