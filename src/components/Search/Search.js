@@ -1,12 +1,10 @@
 import { App } from './SearchStyles'
 import { FiSearch } from 'react-icons/fi'
 
-const Search = ({input: text, onChange:setText}) => {
+const Search = ({input: text, onChange: setText}) => {
 
   function handleChange(event) {
     event.preventDefault()
-
-    console.log(text)
   }
 
   return (
@@ -22,7 +20,8 @@ const Search = ({input: text, onChange:setText}) => {
 
         <button 
         className="searchIcon" 
-        type="submit">
+        type="submit"
+        >
           <FiSearch color='#000'/>
         </button>
       </form>

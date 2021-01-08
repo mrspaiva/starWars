@@ -1,6 +1,6 @@
-import Logo from '../img/logo.svg';
-import { App } from './NavbarStyles';
-import { Link } from 'react-router-dom';
+import Logo from '../../img/logo.svg'
+import { App } from './NavbarStyles'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return(
@@ -16,4 +16,4 @@ function Navbar() {
   )
 }
 
-export default Navbar;
+export default Navbar
