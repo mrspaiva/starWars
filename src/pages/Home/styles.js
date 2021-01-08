@@ -1,25 +1,24 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-export const App = styled.div`
-  .background {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .logo-container {
+export const Container = styled.div`
     position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  `
 
-  .logo {
+  export const Background = styled.img`
     position: absolute;
-  }
+    width: 100vw;
+    height: 100vh;
+  `
 
-  .next {
+  export const Logo = styled.img`
+    position: absolute;
+  `
+
+  export const Next = styled.div `
     position: absolute;
     right: 3rem;
     bottom: 3rem;
@@ -34,10 +33,9 @@ export const App = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-  }
 
-  .next:hover {
-    background-color: #DD9500;
-  }
-`;
+    &:hover {
+      background-color: #DD9500;
+    }
+  `
 
