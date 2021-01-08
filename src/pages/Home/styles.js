@@ -18,7 +18,7 @@ export const Container = styled.div`
     position: absolute;
   `
 
-  export const Next = styled.div `
+  export const Next = styled.div`
     position: absolute;
     right: 3rem;
     bottom: 3rem;
