@@ -1,14 +1,12 @@
-import { App } from './CardStyles'
+import { Container, CardList } from './CardStyles'
 
 function Card(props) {
   return (
-    <App>
-      <div className="contentCard">
-        <div className="cardList">
+      <Container>
+        <CardList>
           <p>{props.children}</p> 
-        </div>
-      </div>
-    </App>
+        </CardList>
+      </Container>
   )
 }
 
