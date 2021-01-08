@@ -1,27 +1,23 @@
-import { App } from './styles'
-import Navbar  from '../../components/Navbar'
-import Search from '../../components/Search'
-import Card from '../../components/Card'
+import { Container, Title, SearchContainer, CardContainer } from './styles'
+import Navbar  from '../../components/Navbar/Navbar'
+import Search from '../../components/Search/Search'
+import Card from '../../components/Card/Card'
 
 function People() {
   return (
-    <App>
-      <div className="contentPeople">
-        <div className="navbar">
+      <Container>
           <Navbar />
-        </div>
-        <h1 className="title">Personagens</h1>
-        <div className="search">
+        <Title>Personagens</Title>
+        <SearchContainer>
           <Search />
-        </div>
-        <div className="card">
+        </SearchContainer>
+        <CardContainer>
           <Card />
           <Card />
           <Card />
           <Card />
-        </div>
-      </div>
-    </App>
+        </CardContainer>
+      </Container>
   )
 }
 
