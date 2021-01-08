@@ -1,8 +1,8 @@
 import {useState, useEffect } from 'react'
-import { App } from './styles'
-import Navbar from '../../components/Navbar'
-import Search from '../../components/Search'
-import Card from '../../components/Card'
+import { Container, Title, SearchContainer, CardContainer } from './styles'
+import Navbar from '../../components/Navbar/Navbar'
+import Search from '../../components/Search/Search'
+import Card from '../../components/Card/Card'
 
 function Films() {
   const [filmList, setFilmList] = useState([])
@@ -27,19 +27,16 @@ function Films() {
   }
   
   return (
-    <App>
-      <div className="contentFilms">
-        <div className="navbar">
+      <Container>
           <Navbar />
-        </div>
-        <h1 className="title">Filmes</h1>
-        <div className="search">
+        <Title className="title">Filmes</Title>
+        <SearchContainer>
           <Search 
             input={input}
             onChange={updateInput}
           />
-        </div>
-        <div className="card">
+        </SearchContainer>
+        <CardContainer className="card">
           {filmList.map((film, key) => (
             <Card key={key}>
               <ul>
@@ -48,7 +45,7 @@ function Films() {
                   <p className="contentCardData">{film.title}</p>
                 </li>
                 <li>
-                  <p className="titleCard">Descrição:</p>
+                  <p className="titleCard">Descrição: </p>
                   <p className="contentCardData">{film.opening_crawl}</p>
                 </li>
                 <li>
@@ -62,9 +59,8 @@ function Films() {
               </ul>
             </Card>
           ))}
-        </div>
-      </div>
-    </App>
+        </CardContainer>
+      </Container>
   )
 }
 
