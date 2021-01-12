@@ -1,9 +1,10 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Home from './pages/Home';
+import Home from './pages/Home'
 import Category from './pages/Category'
-import Films from './pages/Films';
-import People from './pages/People';
+import Films from './pages/Films'
+import People from './pages/People'
+import Planets from './pages/Planets'
 
 function Routes() {
   return (
@@ -13,9 +14,10 @@ function Routes() {
         <Route path='/category' exact component={Category} />
         <Route path='/category/films' component={Films} />
         <Route path='/category/people' component={People} />
+        <Route path='/category/planets' component={Planets} />
       </Switch>
     </BrowserRouter>
   )
 }
 
-export default Routes;
+export default Routes

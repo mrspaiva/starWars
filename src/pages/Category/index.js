@@ -17,7 +17,7 @@ function Category() {
             <Link to="/category/people" className="people">Personagens</Link>
           </Button>
           <Button>
-            <Link className="planets">Planetas</Link>
+            <Link to="/category/planets" className="planets">Planetas</Link>
           </Button>  
           <Button>
             <Link className="species">Espécies</Link>
