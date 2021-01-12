@@ -28,6 +28,11 @@ export const CardContainer = styled.div`
   margin-left: 4rem;
   max-width: 90vw;
 
+  li {
+    list-style: none;
+    display: flex;
+  }
+
   .titleCard {
     font-size: 1.5rem;
     color: #FFC500
