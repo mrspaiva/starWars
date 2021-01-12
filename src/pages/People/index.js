@@ -1,4 +1,4 @@
-import { Container, Title, SearchContainer, CardContainer } from './styles'
+import { Container, Title, SearchContainer, CardContainer } from '../styles'
 import Navbar  from '../../components/Navbar/Navbar'
 import Search from '../../components/Search/Search'
 import Card from '../../components/Card/Card'
