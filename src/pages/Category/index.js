@@ -20,7 +20,7 @@ function Category() {
             <Link to="/category/planets" className="planets">Planetas</Link>
           </Button>  
           <Button>
-            <Link className="species">Espécies</Link>
+            <Link to="/category/species" className="species">Espécies</Link>
           </Button>
           <Button>
             <Link className="starships">Naves</Link>
