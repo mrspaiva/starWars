@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Background from '../../img/background.png'
+import Background from '../img/background.png'
 
 export const Container = styled.div`
   overflow: hidden;

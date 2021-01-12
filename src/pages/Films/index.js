@@ -1,5 +1,5 @@
 import {useState, useEffect } from 'react'
-import { Container, Title, SearchContainer, CardContainer } from './styles'
+import { Container, Title, SearchContainer, CardContainer } from '../styles'
 import Navbar from '../../components/Navbar/Navbar'
 import Search from '../../components/Search/Search'
 import Card from '../../components/Card/Card'
@@ -27,15 +27,15 @@ function Films() {
   
   return (
       <Container>
-          <Navbar />
-        <Title className="title">Filmes</Title>
+        <Navbar />
+        <Title>Filmes</Title>
         <SearchContainer>
           <Search 
             input={input}
             onChange={updateInput}
           />
         </SearchContainer>
-        <CardContainer className="card">
+        <CardContainer>
           {filmList.map((film, key) => (
             <Card key={key}>
               <ul>
