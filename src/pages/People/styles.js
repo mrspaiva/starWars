@@ -22,5 +22,24 @@ export const SearchContainer = styled.div`
 
 export const CardContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  margin-left: 4rem;
+  max-width: 90vw;
+
+  li {
+    list-style: none;
+    display: flex;
+  }
+
+  .titleCard {
+    font-size: 1.5rem;
+    color: #FFC500
+  }
+
+  .contentCardData {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+  }
 `
