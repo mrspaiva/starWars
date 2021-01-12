@@ -3,6 +3,7 @@ import { Container, Title, SearchContainer, CardContainer } from './styles'
 import Navbar from '../../components/Navbar/Navbar'
 import Search from '../../components/Search/Search'
 import Card from '../../components/Card/Card'
+import api from '../../services/api'
 
 function Films() {
   const [filmList, setFilmList] = useState([])
@@ -10,9 +11,7 @@ function Films() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("https://swapi.dev/api/films")
-      const data = await response.json()
-      console.log(data)
+      const {data} = await api.get('/films')
       setFilmList(data.results)
     }
     fetchData()
