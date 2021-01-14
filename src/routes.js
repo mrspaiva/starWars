@@ -7,6 +7,7 @@ import People from './pages/People'
 import Planets from './pages/Planets'
 import Species from './pages/Species'
 import Starships from './pages/Starships'
+import Vehicles from './pages/Vehicles'
 
 function Routes() {
   return (
@@ -19,6 +20,7 @@ function Routes() {
         <Route path='/category/planets' component={Planets} />
         <Route path='/category/species' component={Species} />
         <Route path='/category/starships' component={Starships} />
+        <Route path='/category/vehicles' component={Vehicles} />
       </Switch>
     </BrowserRouter>
   )

@@ -26,7 +26,7 @@ function Category() {
             <Link to="/category/starships" className="starships">Naves</Link>
           </Button>
           <Button>
-            <Link className="vehicles">Veículos</Link>
+            <Link to="/category/vehicles" className="vehicles">Veículos</Link>
           </Button>
         </CategoryList>
       </Content>
